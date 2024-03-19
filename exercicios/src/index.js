@@ -5,11 +5,15 @@ import ReactDOM from 'react-dom'// conversa direro com o dom da pagina
 //import BomDia from './componentes/BomDia';
 //import { BoaNoite,BoaTarde } from './componentes/Multiplus'
 //import Multiplus,{BoaNoite} from './componentes/Multiplus'
-import Saudacao from './componentes/Saudacao'
+//import Saudacao from './componentes/Saudacao'
+import Pai from './componentes/Pai'
 
 ReactDOM.render(
     <div>
-        <Saudacao tipo="Bom dia" nome="Matheus"/>
+        <Pai sobrenome="Miksza" nome="Matheus">
+            {/* Como passo os filho aqui */}
+            
+        </Pai>
     </div> 
     , document.getElementById('root'))
     
