@@ -6,6 +6,19 @@ export default class Saudacao extends Component{
         tipo:this.props.tipo,
         nome:this.props.nome
     }
+
+    //precisa passar o bind pq quando o change é chamada sem ser arrow 
+    //o this não é o componete atual 
+    //passando o bind o this passa a ser o componente em si
+    constructor(props){
+        super(props)//é nessesario ter o super com props
+        this.setTipo = this.setTipo.bind(this)
+        this.setNome = this.setNome.bind(this)
+
+    }
+
+
+
     setTipo(e){
         this.setState({tipo: e.target.value}) 
     }
@@ -20,11 +33,11 @@ export default class Saudacao extends Component{
                 <hr />
                 <input type="text" placeholder="Tipo..." 
                     value={tipo} 
-                    onChange={e=> this.setTipo(e)} />
+                    onChange={this.setTipo} />
                 
                 <input type="text" placeholder="Nome..." 
                     value={nome} 
-                    onChange={e=> this.setNome(e)} />
+                    onChange={this.setNome} />
             </div>
         )
     }
