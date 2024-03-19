@@ -7,12 +7,15 @@ import ReactDOM from 'react-dom'// conversa direro com o dom da pagina
 //import Multiplus,{BoaNoite} from './componentes/Multiplus'
 //import Saudacao from './componentes/Saudacao'
 import Pai from './componentes/Pai'
+import Filho from './componentes/Filho'
+
 
 ReactDOM.render(
     <div>
         <Pai sobrenome="Miksza" nome="Matheus">
-            {/* Como passo os filho aqui */}
-            
+            <Filho nome='Pedro'/>
+            <Filho nome='Matheus'/>
+            <Filho nome='Carla'/>
         </Pai>
     </div> 
     , document.getElementById('root'))
