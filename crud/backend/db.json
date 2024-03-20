@@ -1,14 +1,24 @@
 {
-    "users":[
+  "users": [
     {
-        "id":1,
-        "name": "Matheus Miksza",
-        "email":"mathmiksza@gmail.com"
+      "id": 1,
+      "name": "Matheus Miksza",
+      "email": "mathmiksza@gmail.com"
     },
     {
-        "id":2,
-        "name": "Mysma Melo",
-        "email":"mysmamelo@gmail.com"
+      "id": 2,
+      "name": "Mysma Miksza",
+      "email": "mysmamelo@gmail.com"
+    },
+    {
+      "name": "Zé das Couves",
+      "email": "ze@couve.com",
+      "id": 4
+    },
+    {
+      "name": "Ana Silva",
+      "email": "ana@silva.com",
+      "id": 5
     }
-]
+  ]
 }
